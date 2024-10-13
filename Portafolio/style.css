@@ -1,0 +1,53 @@
+:root{
+    --fondo: #1F2833;
+    --titulo: #66FCF1;
+    --secundario: #C5C6C7;
+    --principal: #FFFFFF;
+    --interaccion: #45A29E;
+    --fuente: "Fira Code", monospace;
+}
+
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+    scroll-snap-type: y mandatory;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body{
+    background-color: var(--fondo);
+}
+
+/*Header*/
+
+.header__container{
+    margin: 0;
+    padding: 1rem;
+}
+
+.header__list{
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 1rem;
+}
+
+.header__opcion{
+    list-style: none;
+    font-family: var(--fuente);
+    font-size: 2rem;
+    cursor: pointer;
+    color: var(--principal);
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+.header__opcion:hover{
+    background-color: var(--interaccion);
+    border-radius: 1rem;
+}
